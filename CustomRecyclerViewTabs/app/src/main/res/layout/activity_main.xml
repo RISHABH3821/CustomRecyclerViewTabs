@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Activities.MainActivity">
+
+  <TextView
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:text="This is a recyclerview"
+    android:textColor="@android:color/black"
+    android:textSize="18sp"/>
+
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/tab_recyclerView"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/text"/>
+
+  <TextView
+    android:id="@+id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tab_recyclerView"
+    android:padding="10dp"
+    android:text="This is a viewpager"
+    android:textColor="@android:color/black"
+    android:textSize="18sp"/>
+
+  <android.support.v4.view.ViewPager
+    android:id="@+id/viewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/text1"/>
+
+</RelativeLayout>
